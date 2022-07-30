@@ -38,8 +38,8 @@ export default function ForgotPassword() {
     <h1 className='text-2xl text-white font-serif font-medium mt-10 mb-12 text-center'>
            Forgot Password
     </h1>
-    {error && 'hai'}
-    {message && <Alert variant="success">{message}</Alert>}
+    {error && <h2 className='text-center text-red-700'>{error}</h2>}
+    {message && <h2 className='text-center text-green-800'>{message}</h2>}
         <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor='email' className='text-primary'>Email</label>
